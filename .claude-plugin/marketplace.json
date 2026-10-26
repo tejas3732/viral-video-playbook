@@ -1,0 +1,16 @@
+{
+  "name": "viral-video-playbook",
+  "owner": {
+    "name": "Tejas Rane",
+    "url": "https://x.com/tejas3732"
+  },
+  "description": "A skill that teaches your coding agent what 418 viral AI-made videos have in common, with searchable frame-by-frame breakdowns.",
+  "plugins": [
+    {
+      "name": "viral-video-playbook",
+      "source": "./",
+      "description": "What 418 viral AI-made videos have in common, broken down frame by frame, plus a search for real reference examples with recipes.",
+      "version": "1.0.0"
+    }
+  ]
+}

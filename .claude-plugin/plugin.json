@@ -1,0 +1,10 @@
+{
+  "name": "viral-video-playbook",
+  "description": "What 418 viral AI-made videos have in common, broken down frame by frame (hooks, motion, pacing, music, look, endings), plus a search for real reference examples with recipes.",
+  "version": "1.0.0",
+  "author": {"name": "Tejas Rane", "url": "https://x.com/tejas3732"},
+  "homepage": "https://github.com/tejas3732/viral-video-playbook",
+  "repository": "https://github.com/tejas3732/viral-video-playbook",
+  "license": "MIT",
+  "keywords": ["video", "motion-graphics", "remotion", "hyperframes", "explainer", "launch-video", "playbook"]
+}
