@@ -1,6 +1,6 @@
 # The Video Playbook: what 418 viral AI-made videos have in common
 
-**Source:** every video in the Skillry "Claude Opus 5.5" archive (418 videos from X, 22 parts, with the creators' prompts). Each video was watched frame by frame by Google Gemini (3.5 Flash-Lite for 402 videos, 3.5 Flash for 16) on the free tier, on 26 Oct 2026. The full notes for every video are in `data/videos.jsonl` (search them with `scripts/refs.py`).
+**Source:** every video in the [Skillry "Claude Opus 5.5" gallery](https://skillry.dev/ai-videos/opus-5-5): 418 videos posted on X by 387 creators, with the creators' prompts from the open dataset at [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) (211 full prompts; 207 post text only). Each video was watched frame by frame by Google Gemini (3.5 Flash-Lite for 402 videos, 3.5 Flash for 16) on the free tier, on 26 Oct 2026. The full notes for every video are in `data/videos.jsonl` (search them with `scripts/refs.py`).
 
 **How to read the scores:** Gemini scores generously (the median is 9 out of 10). Use the scores to **rank** videos against each other, not as absolute grades.
 
