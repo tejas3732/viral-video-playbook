@@ -1,10 +1,12 @@
 # Viral Video Playbook
 
+![What the best AI videos have in common: 418 viral AI-made videos, each dot coloured by its hook](assets/hero.png)
+
 **I had AI watch 418 viral AI-made videos frame by frame, wrote down what the best ones do, and turned it into a skill your coding agent can use.**
 
 Install it in Claude Code or Codex. Next time you ask your agent for a launch video, an explainer or a motion graphic, it plans with real numbers (hooks, pacing, music, look) and pulls real examples with step-by-step recipes from these 418 videos.
 
-**Contents:** [Where the videos come from](#where-the-videos-come-from) · [How we analysed them](#how-we-analysed-them) · [What we found](#what-we-found) · [How to use it](#how-to-use-it) · [What's in this repo](#whats-in-this-repo) · [Credits](#credits)
+**Contents:** [Where the videos come from](#where-the-videos-come-from) · [How we analysed them](#how-we-analysed-them) · [What we found](#what-we-found) · [3 ways to use it](#3-ways-to-use-it) · [How to use it](#how-to-use-it) · [What's in this repo](#whats-in-this-repo) · [Credits](#credits)
 
 ---
 
@@ -23,6 +25,8 @@ All credit for the videos goes to their creators, and for collecting them to Ski
 ## How we analysed them
 
 In plain words: we showed every video to an AI that can watch video, asked it the same detailed questions each time, then counted the answers.
+
+![How it was made: collect 418 videos, Gemini watches each one, asks the same 14 questions, then we count the patterns](assets/how.png)
 
 1. **Watched with Google Gemini.** Each video was uploaded to Gemini (3.5 Flash-Lite for 402 videos, 3.5 Flash for 16), together with the creator's prompt. Gemini looked at 0.5 to 4 frames per second depending on the length (more frames for short videos) and listened to the sound.
 2. **Same questions every time.** Gemini answered in a fixed format: the first 3 seconds (the hook), every scene with timestamps, colours and fonts, transitions and text animation, pacing, music and sound effects, the ending, what works, what doesn't, reusable recipes, how the prompt shaped the result, and scores out of 10.
@@ -45,9 +49,34 @@ Want to do the same with your own videos? See [Break down your own videos](#4-br
 | Have **no call to action** at the end | 46%, an easy edge |
 | Most common complaint | **text too fast to read** (42%) |
 
+![Anatomy of a 30-second viral AI video: hook, build, drop, show it, end card, with the music energy over time](assets/anatomy.png)
+
 The moments people remember are **morphs**: one shape, card or screen turning into the next without a cut. Prompts that spelled out music, sound effects, screen shape, fonts and motion style scored higher.
 
 The full write-up, with a hook library, motion recipes, sound, colour, endings, mistakes to avoid, a prompt template and the top 20 videos to study, is in **[PLAYBOOK.md](skills/viral-video-playbook/PLAYBOOK.md)**.
+
+## 3 ways to use it
+
+### 1. Make a new video
+**For:** founders, marketers and creators who need a launch video, promo or explainer and want it to land.
+
+> *"Make a 30-second launch video for my app. Use the viral video playbook."*
+
+Your agent picks a hook for the first 3 seconds, finds 2–3 real videos that did something similar, plans the scenes on the beat, writes the prompt with the details that scored best (music, tempo, fonts, motion) and ends on a clear call to action. You get a plan based on what worked for 418 videos, not a guess.
+
+### 2. Fix a video that isn't working
+**For:** anyone with a draft that feels slow, flat or confusing.
+
+> *"Review my video against the viral video playbook and tell me the 3 biggest fixes."*
+
+Your agent checks it against the most common mistakes: no hook in the first 3 seconds, text too fast to read, too much moving at once, music that doesn't build, a weak ending. Add `tools/analyze_video.py` to have Gemini watch your render first, so the review is based on what's actually on screen.
+
+### 3. Study what works
+**For:** designers, editors and anyone building a collection of ideas.
+
+> *"Find me 5 references for a 3D product reveal, with the recipe for each."*
+
+Search 418 breakdowns by effect, style or topic and get the creator, the link, the standout moment and a step-by-step recipe. Or point `tools/analyze_video.py` at a competitor's ad and get the same breakdown for it.
 
 ---
 
